@@ -1,5 +1,6 @@
 import React from 'react';
 import { GitHub, LinkedIn, MailOutline, Room, YouTube } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -17,11 +18,11 @@ export default function Footer() {
                 <div className="w-1/4">
                     <h3 className="font-bold mb-4">Useful Links</h3>
                     <ul className="list-none p-0">
-                        <li className="text-sm mb-2 hover:text-blue-500"><a href="#">Home</a></li>
-                        <li className="text-sm mb-2 hover:text-blue-500"><a href="#">Register</a></li>
-                        <li className="text-sm mb-2 hover:text-blue-500"><a href="#">Login</a></li>
-                        <li className="text-sm mb-2 hover:text-blue-500"><a href="#">Features</a></li>
-                        <li className="text-sm mb-2 hover:text-blue-500"><a href="#">Help</a></li>
+                        <li className="text-sm mb-2 hover:text-blue-500"><Link to="/">Home</Link></li>
+                        <li className="text-sm mb-2 hover:text-blue-500"><Link to="/signup">SignUp</Link></li>
+                        <li className="text-sm mb-2 hover:text-blue-500"><Link to="/login">Login</Link></li>
+                        <li className="text-sm mb-2 hover:text-blue-500"><Link to="/">Features</Link></li>
+                        <li className="text-sm mb-2 hover:text-blue-500"><Link to="/">Help</Link></li>
                     </ul>
                 </div>
                 <div className="w-1/4">
