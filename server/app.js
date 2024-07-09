@@ -5,9 +5,15 @@ import authRouter from './routes/auth.route.js';
 import userRouter from './routes/user.route.js';
 import quizRoutes from './routes/quiz.route.js';
 import swaggerSetup from './utils/swaggerSetup.js';
-
+import cors from 'cors';
 
 const app = express();
+app.use(cors({
+    origin: 'https://quizy0.netlify.app/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+}));
 
 connectDB();
 
