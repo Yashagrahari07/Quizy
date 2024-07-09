@@ -16,7 +16,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex items-center">
                     {currentUser ? (
-                        <Link to="/" className="ml-4 text-lg hover:bg-blue-500 bg-blue-400 px-4 py-2 rounded">Profile</Link>
+                        <Link to="/profile" className="ml-4 text-lg hover:bg-blue-500 bg-blue-400 px-4 py-2 rounded">Profile</Link>
                     ) : (
                         <>
                             <Link to="/login" className="text-lg hover:bg-blue-500 bg-blue-400 px-4 py-2 rounded">Login</Link>
